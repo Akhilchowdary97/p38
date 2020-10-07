@@ -31,6 +31,6 @@ urlpatterns = [
     path('school/create/',views.Create_School.as_view(),name="create_School"),
     path('school/update/<int:pk>',views.Update_School.as_view(),name="update_school"),
     path('school/delete/<int:pk>',views.Delete_School.as_view(),name="delete_school"),
-      
-
+    path('students/create/',views.Create_Student.as_view(),name="create_student"),  
+    path('students/update/<int:pk>',views.Update_Student.as_view(),name="update_student"),
  ]

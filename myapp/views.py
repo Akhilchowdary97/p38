@@ -67,10 +67,20 @@ class Create_School(CreateView):
     template_name="school_form.html"
     fields=('name','principal','location')
 
+class Create_Student(CreateView):
+    model=Student
+    template_name="student_form.html"
+    fields=('name','age','school')
+
 class Update_School(UpdateView):
     model=School
     template_name="school_form.html"
     fields=('name','principal','location')
+
+class Update_Student(UpdateView):
+    model=Student
+    template_name="student_form.html"
+    fields=('name','age','school')
 
 class Delete_School(DeleteView):
     model=School
